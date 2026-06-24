@@ -1,6 +1,10 @@
 function App() {
   return (
-    <h1>Hello, I'm Gauree 👋</h1>
+    <div className="min-h-screen bg-black text-white flex items-center justify-center">
+      <h1 className="text-5xl font-bold">
+        Hello, I'm Gauree 👋
+      </h1>
+    </div>
   );
 }
 
