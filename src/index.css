@@ -1,1 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
 @import "tailwindcss";
+
+/* 
+   DESIGN TOKENS
+*/
+
+:root {
+  /* Light Mode */
+  --background: #f7f3ed;
+  --text-primary: #1c1a17;
+  --text-secondary: #6e675f;
+  --accent: #8c735a;
+  --border: #ddd3c7;
+
+  font-family: "Manrope", sans-serif;
+
+  color: var(--text-primary);
+  background-color: var(--background);
+
+  scroll-behavior: smooth;
+}
+
+.dark {
+  /* Dark Mode */
+  --background: #12100d;
+  --text-primary: #eee6da;
+  --text-secondary: #a89d90;
+  --accent: #c7a27c;
+  --border: #3a332d;
+}
+
+/*
+   BASE RESET
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--text-primary);
+  transition:
+    background-color 0.5s ease,
+    color 0.5s ease;
+}
+
+/*
+   TYPOGRAPHY
+*/
+
+h1,
+h2,
+h3,
+.display {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+}
+
+p,
+span,
+button,
+a {
+  color: inherit;
+}

@@ -1,10 +1,16 @@
+import Navbar from "./components/Navbar";
+import Hero from "./sections/Hero";
+import SelectedWork from "./sections/SelectedWork";
+
 function App() {
   return (
-    <div className="min-h-screen bg-black text-white flex items-center justify-center">
-      <h1 className="text-5xl font-bold">
-        Hello, I'm Gauree 👋
-      </h1>
-    </div>
+    <>
+      <Navbar />
+      <main>
+        <Hero />
+        <SelectedWork />
+      </main>
+    </>
   );
 }
 
