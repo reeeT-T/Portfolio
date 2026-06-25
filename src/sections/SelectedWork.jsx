@@ -7,7 +7,7 @@ function SelectedWork() {
   const rightColumn = projects.filter((p) => p.column === "right");
 
   return (
-    <section id="work" className="py-40">
+    <section id="work" className="py24">
       <Container>
 
         {/* HEADER */}

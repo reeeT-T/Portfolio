@@ -15,7 +15,7 @@ const projects = [
     category: "AI • Full Stack • Productivity",
     description:
       "An all-in-one student assistant featuring study tracking, timetable management, job application tracking, summarization tools, and personalized academic insights.",
-    image: "/projects/student-ai.jpg",
+    image: "/public/project2.png",
     column: "right",
   },
 
