@@ -8,31 +8,46 @@ function ProjectCard({ project }) {
       transition={{ duration: 0.7, ease: "easeOut" }}
       viewport={{ once: true, amount: 0.3 }}
       whileHover={{ y: -6 }}
-      className="flex flex-col gap-6 group"
+      className="group rounded-2xl bg-[#3b241c]/95 border border-[#5a3a2e]/40 overflow-hidden backdrop-blur-sm"
     >
 
-      {/* IMAGE */}
-      <div className="w-full aspect-[4/3] overflow-hidden rounded-sm bg-[#e7ded3]">
-        <img
-          src={project.image}
-          alt={project.title}
-          className="w-full h-full object-cover object-top block"
-        />
-      </div>
+      <div className="p-6">
 
-      {/* TEXT */}
-      <div>
-        <p className="text-xs tracking-[0.3em] uppercase opacity-60 mb-3">
+        {/* CATEGORY */}
+        <p className="text-[10px] uppercase tracking-[0.25em] text-[#d8c4b6]">
           {project.category}
         </p>
 
-        <h3 className="text-3xl md:text-4xl font-serif mb-4">
+        {/* TITLE (BROWN FOCUS HERE) */}
+        <h3 className="text-2xl font-serif text-[#f7f3ed] mt-2">
           {project.title}
         </h3>
 
-        <p className="opacity-70 leading-relaxed">
+        {/* DESCRIPTION */}
+        <p className="text-sm text-[#d8c4b6] mt-3 leading-relaxed">
           {project.description}
         </p>
+
+        {/* TECH STACK */}
+        <div className="flex flex-wrap gap-2 mt-4">
+          {project.tech.map((t, i) => (
+            <span
+              key={i}
+              className="text-[10px] px-2 py-1 rounded-full border border-[#d8cabd] bg-[#f1ebe4] text-[#5a3a2e]"
+            >
+              {t}
+            </span>
+          ))}
+        </div>
+
+      </div>
+
+      {/* IMAGE (neutral but framed with brown) */}
+      <div className="border-t border-[#e0d2c3]">
+        <img
+          src={project.image}
+          className="w-full h-[180px] object-cover"
+        />
       </div>
 
     </motion.div>

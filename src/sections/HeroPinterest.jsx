@@ -21,7 +21,7 @@ function HeroPinterest() {
         };
 
   return (
-    <section className="py32 bg-[#f7f3ed] p-4 md:p-6 mt-10">
+    <section className="py32 bg-[var(--background)] p-4 md:p-6 mt-10">
 
       <div>
         
@@ -85,11 +85,11 @@ function HeroPinterest() {
             initial="hidden"
             animate="show"
             transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
-            className="col-span-1 md:col-span-4 row-span-1 bg-[#9D7F65] rounded-2xl overflow-hidden border border-[#d8cabd]"
+            className="col-span-1 md:col-span-4 row-span-1 bg-[#9D7F65] rounded-2xl overflow-hidden"
             >
             <div className="h-full px-6 flex flex-col justify-center">
 
-                <p className="text-[10px] tracking-[0.25em] uppercase text-[#8b735f] mb-2">
+                <p className="text-[10px] tracking-[0.25em] uppercase text-[#4a2f24] mb-2">
                 Role
                 </p>
 
@@ -173,7 +173,7 @@ function HeroPinterest() {
             initial="hidden"
             animate="show"
             transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
-            className="col-span-1 md:col-span-1 row-span-2 bg-[#8b6b52] rounded-2xl overflow-hidden border border-[#a88b74]"
+            className="col-span-1 md:col-span-1 row-span-2 bg-[#8b6b52] rounded-2xl overflow-hidden "
             >
             <div className="h-full p-3 flex flex-col justify-center gap-2">
 
